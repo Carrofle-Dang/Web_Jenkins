@@ -15,7 +15,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.0</version> <!-- Spring Boot 최신 안정 버전 기준 -->
+        <version>2.7.2</version> <!-- Spring Boot 최신 안정 버전 기준 -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
