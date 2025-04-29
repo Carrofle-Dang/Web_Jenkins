@@ -1,12 +1,12 @@
 plugins {
-    id 'org.springframework.boot' version '3.2.0'
-    id 'io.spring.dependency-management' version '1.1.0'
+    id 'org.springframework.boot' version '2.5.0' // Gradle 7.0이면 Spring Boot 2.5.x가 잘 맞음
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
 }
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '11' // Java 11 기준 (Gradle 7.0 기본 대응)
 
 repositories {
     mavenCentral()
@@ -19,6 +19,6 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-tasks.named('test') {
+test {
     useJUnitPlatform()
 }
